@@ -33,7 +33,7 @@ document.addEventListener('DOMContentLoaded', function() {
               leadFormSection.style.display = 'none';
               productPage.style.display = 'block';
               welcomeMessage.innerText = `Seja bem-vindo, ${name}!`; // Atualiza a mensagem de boas-vindas
-          }, 20000); // Reduzido para 2 segundos
+          }, 2000); // Reduzido para 2 segundos
       } else {
           alert('Por favor, insira um e-mail e telefone válidos.');
       }

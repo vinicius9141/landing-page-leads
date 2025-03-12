@@ -353,6 +353,34 @@ h1, h2, h3, h4, h5, h6 {
   color: #3498db;
 }
 
+/* Estilos para o Carrossel */
+.carousel {
+  height: 400px; /* Altura fixa para o carrossel */
+  overflow: hidden; /* Garante que as imagens não ultrapassem o contêiner */
+  border-radius: 10px; /* Bordas arredondadas */
+}
+
+.carousel-inner {
+  height: 100%; /* Ocupa toda a altura do carrossel */
+}
+
+.carousel-item {
+  height: 100%; /* Ocupa toda a altura do carrossel */
+}
+
+.carousel-item img {
+  width: 100%; /* Largura total do contêiner */
+  height: 100%; /* Altura total do contêiner */
+  object-fit: cover; /* Redimensiona a imagem para cobrir o espaço sem distorcer */
+  border-radius: 10px; /* Bordas arredondadas */
+}
+
+/* Ajustes para telas menores */
+@media (max-width: 768px) {
+  .carousel {
+      height: 300px; /* Altura menor para dispositivos móveis */
+  }
+}
 
 /* Responsividade */
 @media (max-width: 768px) {
