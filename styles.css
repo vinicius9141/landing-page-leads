@@ -376,8 +376,13 @@ h1, h2, h3, h4, h5, h6 {
   border-radius: 10px; 
 }
 
-
-
+.img-social{
+  object-fit: cover;
+  max-width: 1rem;
+}
+.img-social svg{
+  fill: #f8f9fa ;
+}
 @media (max-width: 768px) {
   .carousel {
       height: 300px;
