@@ -5,12 +5,10 @@ document.addEventListener('DOMContentLoaded', function() {
   const phoneInput = document.getElementById('phone');
   const countdownMinutes = document.getElementById('minutes');
   const countdownSeconds = document.getElementById('seconds');
-  const welcomeMessage = document.getElementById('welcomeMessage'); // Elemento para a mensagem de boas-vindas
+  const welcomeMessage = document.getElementById('welcomeMessage');
 
-  // Máscara para o telefone
   VMasker(phoneInput).maskPattern('(99) 99999-9999');
 
-  // Validação do formulário
   leadForm.addEventListener('submit', function(event) {
       event.preventDefault();
 
@@ -19,7 +17,6 @@ document.addEventListener('DOMContentLoaded', function() {
       const phone = document.getElementById('phone').value;
 
       if (validateEmail(email) && validatePhone(phone)) {
-          // Feedback visual
           leadFormSection.innerHTML = `
               <div class="text-center">
                   <h2>Obrigado, ${name}!</h2>
@@ -27,32 +24,27 @@ document.addEventListener('DOMContentLoaded', function() {
                   <p class="transition-text">Redirecionando para a página do produto...</p>
               </div>
           `;
-
-          // Exibir a página do produto após 2 segundos
           setTimeout(() => {
               leadFormSection.style.display = 'none';
               productPage.style.display = 'block';
-              welcomeMessage.innerText = `Seja bem-vindo, ${name}!`; // Atualiza a mensagem de boas-vindas
-          }, 2000); // Reduzido para 2 segundos
+              welcomeMessage.innerText = `Seja bem-vindo, ${name}!`;
+          }, 2000);
       } else {
           alert('Por favor, insira um e-mail e telefone válidos.');
       }
   });
 
-  // Validação de e-mail
   function validateEmail(email) {
       const re = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
       return re.test(String(email).toLowerCase());
   }
 
-  // Validação de telefone
   function validatePhone(phone) {
       const re = /^\(\d{2}\) \d{5}-\d{4}$/;
       return re.test(phone);
   }
 
-  // Timer Countdown
-  let time = 300; // 5 minutos em segundos
+  let time = 300; 
 
   function updateCountdown() {
       const minutes = Math.floor(time / 60);

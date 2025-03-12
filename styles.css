@@ -98,7 +98,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .lead-form-section::before {
   content: '';
-  position: fixed; /* Fixa o fundo para cobrir toda a tela */
+  position: fixed; 
   top: 0;
   left: 0;
   width: 100%;
@@ -106,7 +106,7 @@ h1, h2, h3, h4, h5, h6 {
   background-image: url('https://i0.wp.com/revistaamazonia.com.br/wp-content/uploads/2024/08/sustentabilidade-ibs-BioSistemico_org_br-Jhlx3.jpg?resize=1920%2C1248&ssl=1');
   background-size: cover;
   background-position: center;
-  z-index: -1; /* Coloca o fundo atrás do conteúdo */
+  z-index: -1; 
 }
 
 .lead-form-section::after {
@@ -116,7 +116,7 @@ h1, h2, h3, h4, h5, h6 {
   left: 0;
   width: 100%;
   height: 100%;
-  background: rgba(0, 0, 0, 0.5); /* Overlay escuro para melhorar a legibilidade */
+  background: rgba(0, 0, 0, 0.5); 
   z-index: -1;
 }
 
@@ -356,35 +356,32 @@ h1, h2, h3, h4, h5, h6 {
 
 /* Estilos para o Carrossel */
 .carousel {
-  height: 400px; /* Altura fixa para o carrossel */
-  overflow: hidden; /* Garante que as imagens não ultrapassem o contêiner */
-  border-radius: 10px; /* Bordas arredondadas */
+  height: 400px; 
+  overflow: hidden; 
+  border-radius: 10px; 
 }
 
 .carousel-inner {
-  height: 100%; /* Ocupa toda a altura do carrossel */
+  height: 100%; 
 }
 
 .carousel-item {
-  height: 100%; /* Ocupa toda a altura do carrossel */
+  height: 100%; 
 }
 
 .carousel-item img {
-  width: 100%; /* Largura total do contêiner */
-  height: 100%; /* Altura total do contêiner */
-  object-fit: cover; /* Redimensiona a imagem para cobrir o espaço sem distorcer */
-  border-radius: 10px; /* Bordas arredondadas */
+  width: 100%; 
+  height: 100%; 
+  object-fit: cover;
+  border-radius: 10px; 
 }
 
-/* Ajustes para telas menores */
+
+
 @media (max-width: 768px) {
   .carousel {
-      height: 300px; /* Altura menor para dispositivos móveis */
+      height: 300px;
   }
-}
-
-/* Responsividade */
-@media (max-width: 768px) {
   .form-card {
       padding: 20px;
   }
