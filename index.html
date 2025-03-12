@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página de Produto</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Formulário de Captura de Leads -->
+    <section id="leadFormSection" class="lead-form-section">
+      <div class="container">
+          <div class="form-card">
+              <h2>Transforme sua casa com o EcoVibe!</h2>
+              <p>Cadastre-se para receber mais informações sobre nosso sistema de iluminação inteligente e sustentável.</p>
+              <form id="leadForm">
+                  <div class="form-group">
+                      <label for="name">Nome</label>
+                      <input type="text" id="name" class="form-control" placeholder="Digite seu nome" required>
+                  </div>
+                  <div class="form-group">
+                      <label for="email">E-mail</label>
+                      <input type="email" id="email" class="form-control" placeholder="Digite seu e-mail" required>
+                  </div>
+                  <div class="form-group">
+                      <label for="phone">Telefone</label>
+                      <input type="tel" id="phone" class="form-control" placeholder="(99) 99999-9999" required>
+                  </div>
+                  <button type="submit" class="btn-submit">Quero saber mais!</button>
+              </form>
+          </div>
+      </div>
+  </section>
+
+    <!-- Página de Produto -->
+    <section id="productPage" class="product-page" style="display: none;">
+        <!-- Sticky Header -->
+        <header class="sticky-header">
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                <div class="container">
+                    <a class="navbar-brand" href="#">Produto Incrível</a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav ms-auto">
+                            <li class="nav-item">
+                                <a class="nav-link" href="#hero">Início</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#about">Sobre</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#gallery">Galeria</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#testimonials">Depoimentos</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#timer">Promoção</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </header>
+
+        <!-- Hero Section -->
+        <section id="hero" class="hero-section">
+          <div class="container">
+              <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+                  <div class="carousel-indicators">
+                      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                  </div>
+                  <div class="carousel-inner">
+                      <div class="carousel-item active">
+                          <img src="https://s2.glbimg.com/ZZA4OH41axNPLDGNqQPj0LVeKkI=/e.glbimg.com/og/ed/f/original/2021/12/01/wiz_3.jpg" class="d-block w-100" alt="Iluminação Inteligente">
+                          <div class="carousel-caption d-none d-md-block">
+                              <h5>Controle Inteligente</h5>
+                              <p>Ajuste a iluminação da sua casa com um toque no seu smartphone.</p>
+                          </div>
+                      </div>
+                      <div class="carousel-item">
+                          <img src="https://trocafone.wpenginepowered.com/wp-content/uploads/2022/05/tecnologia-1200x640.jpg" class="d-block w-100" alt="Tecnologia Sustentável">
+                          <div class="carousel-caption d-none d-md-block">
+                              <h5>Sustentabilidade</h5>
+                              <p>Lâmpadas LED de baixo consumo energético e longa duração.</p>
+                          </div>
+                      </div>
+                      <div class="carousel-item">
+                          <img src="https://arquitetogelker.com.br/wp-content/uploads/2018/08/JC-projeto-interior-parede-concreto.jpg" class="d-block w-100" alt="Design Moderno">
+                          <div class="carousel-caption d-none d-md-block">
+                              <h5>Design Elegante</h5>
+                              <p>Integre o EcoVibe ao estilo da sua casa com nosso design minimalista.</p>
+                          </div>
+                      </div>
+                  </div>
+                  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Anterior</span>
+                  </button>
+                  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Próximo</span>
+                  </button>
+              </div>
+          </div>
+      </section>
+
+        <!-- About Section -->
+        <section id="about" class="about-section">
+          <div class="container">
+              <h2>Sobre o EcoVibe</h2>
+              <p>O EcoVibe é um sistema de iluminação inteligente que combina tecnologia de ponta com sustentabilidade. Com mais de 16 milhões de cores disponíveis, sensores de presença e integração com assistentes virtuais, você pode criar ambientes únicos e economizar energia de forma inteligente.</p>
+              <ul>
+                  <li>Controle via aplicativo móvel.</li>
+                  <li>Lâmpadas LED de longa duração.</li>
+                  <li>Design moderno e elegante.</li>
+                  <li>Compatível com Alexa, Google Assistant e Siri.</li>
+              </ul>
+          </div>
+      </section>
+        <!-- Gallery Section -->
+        <section id="gallery" class="gallery-section">
+          <div class="container">
+              <h2>Galeria</h2>
+              <div class="row">
+                  <div class="col-md-4">
+                      <img src="https://bluelock.com.br/wp-content/uploads/2021/09/blog-casa-inteligente-950x475.jpg" class="img-thumbnail" alt="Casa Inteligente">
+                  </div>
+                  <div class="col-md-4">
+                      <img src="https://eletroenergia.com.br/wp-content/uploads/2017/02/projeto-de-iluminacao-em-led-como-fica-a-manutencao-815x505-1.jpg" class="img-thumbnail" alt="Iluminação LED">
+                  </div>
+                  <div class="col-md-4">
+                      <img src="https://ventramelidecor.com.br/wp-content/uploads/2024/10/estilo-moderno-1024x563.jpg" class="img-thumbnail" alt="Interior Moderno">
+                  </div>
+              </div>
+          </div>
+      </section>
+
+        <!-- Testimonials Section -->
+        <section id="testimonials" class="testimonials-section">
+          <div class="container">
+              <h2>O que nossos clientes dizem</h2>
+              <div id="testimonialsCarousel" class="carousel slide" data-bs-ride="carousel">
+                  <div class="carousel-inner">
+                      <div class="carousel-item active">
+                          <p>"O EcoVibe transformou minha casa! A iluminação é incrível e a economia na conta de energia é real."</p>
+                          <p><strong>Ana Silva</strong></p>
+                      </div>
+                      <div class="carousel-item">
+                          <p>"Adoro poder controlar as luzes com minha voz. O design também combina perfeitamente com minha decoração."</p>
+                          <p><strong>Carlos Mendes</strong></p>
+                      </div>
+                      <div class="carousel-item">
+                          <p>"Sustentabilidade e tecnologia de ponta em um único produto. Recomendo!"</p>
+                          <p><strong>Mariana Costa</strong></p>
+                      </div>
+                  </div>
+                  <button class="carousel-control-prev" type="button" data-bs-target="#testimonialsCarousel" data-bs-slide="prev">
+                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Anterior</span>
+                  </button>
+                  <button class="carousel-control-next" type="button" data-bs-target="#testimonialsCarousel" data-bs-slide="next">
+                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Próximo</span>
+                  </button>
+              </div>
+          </div>
+      </section>
+      
+
+        <!-- Timer Countdown -->
+        <section id="timer" class="timer-section">
+          <div class="container">
+              <h2>Promoção Relâmpago!</h2>
+              <p>Adquira o EcoVibe com 30% de desconto por tempo limitado.</p>
+              <div id="countdown">
+                  <span id="minutes">05</span>:<span id="seconds">00</span>
+              </div>
+              <button class="btn btn-primary">Compre Agora</button>
+          </div>
+      </section>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <div class="container">
+                <p>&copy; 2023 Produto Incrível. Todos os direitos reservados.</p>
+                <ul class="social-links">
+                  <li><a href="#"><img src="https://source.unsplash.com/30x30/?facebook,logo" alt="Facebook"></a></li>
+                  <li><a href="#"><img src="https://source.unsplash.com/30x30/?twitter,logo" alt="Twitter"></a></li>
+                  <li><a href="#"><img src="https://source.unsplash.com/30x30/?instagram,logo" alt="Instagram"></a></li>
+              </ul>
+            </div>
+        </footer>
+    </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-masker/1.2.0/vanilla-masker.min.js"></script>
+    <script src="scripts.js"></script>
+</body>
+</html>
