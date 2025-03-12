@@ -5,6 +5,7 @@ document.addEventListener('DOMContentLoaded', function() {
   const phoneInput = document.getElementById('phone');
   const countdownMinutes = document.getElementById('minutes');
   const countdownSeconds = document.getElementById('seconds');
+  const welcomeMessage = document.getElementById('welcomeMessage'); // Elemento para a mensagem de boas-vindas
 
   // Máscara para o telefone
   VMasker(phoneInput).maskPattern('(99) 99999-9999');
@@ -22,8 +23,8 @@ document.addEventListener('DOMContentLoaded', function() {
           leadFormSection.innerHTML = `
               <div class="text-center">
                   <h2>Obrigado, ${name}!</h2>
-                  <p>Seu cadastro foi realizado com sucesso.</p>
-                  <p>Redirecionando para a página do produto...</p>
+                  <p class="transition-text">Seu cadastro foi realizado com sucesso.</p>
+                  <p class="transition-text">Redirecionando para a página do produto...</p>
               </div>
           `;
 
@@ -31,8 +32,8 @@ document.addEventListener('DOMContentLoaded', function() {
           setTimeout(() => {
               leadFormSection.style.display = 'none';
               productPage.style.display = 'block';
-              document.querySelector('.hero-section h1').innerText = `Bem-vindo, ${name}!`;
-          }, 2000);
+              welcomeMessage.innerText = `Seja bem-vindo, ${name}!`; // Atualiza a mensagem de boas-vindas
+          }, 20000); // Reduzido para 2 segundos
       } else {
           alert('Por favor, insira um e-mail e telefone válidos.');
       }
